@@ -218,6 +218,41 @@ h3 {
   font-size: 1.05rem;
 }
 
+.hero-grant {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 1.3rem;
+  padding: 1rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--red);
+}
+
+.hero-grant span {
+  color: var(--red);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-grant strong {
+  color: var(--navy);
+  line-height: 1.35;
+}
+
+.hero-grant small {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.hero-grant:hover {
+  border-color: var(--red);
+  box-shadow: 0 12px 32px rgba(7, 31, 61, 0.12);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
