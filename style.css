@@ -324,6 +324,31 @@ h3 {
   font-size: 1.05rem;
 }
 
+.profile-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-list li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.profile-list strong {
+  color: var(--navy);
+}
+
 .contact-form {
   display: grid;
   gap: 1rem;
@@ -822,6 +847,11 @@ h3 {
   .language-tab {
     min-width: 40px;
     padding-inline: 0.55rem;
+  }
+
+  .profile-list li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 
   .hero {
