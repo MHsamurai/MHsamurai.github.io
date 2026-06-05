@@ -303,6 +303,14 @@ h3 {
   color: var(--muted);
 }
 
+.research-card .card-link {
+  margin-top: 1rem;
+}
+
+.card-link a {
+  font-weight: 800;
+}
+
 .tag {
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -409,6 +417,90 @@ h3 {
 .link-grid a:hover {
   transform: translateY(-2px);
   border-color: var(--red);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.intro-card {
+  display: grid;
+  grid-template-rows: 220px 1fr;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 32px rgba(7, 31, 61, 0.07);
+}
+
+.intro-card:hover {
+  color: var(--ink);
+  transform: translateY(-2px);
+  border-color: var(--red);
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-body {
+  position: relative;
+  display: grid;
+  gap: 0.55rem;
+  min-height: 180px;
+  padding: 1.25rem 3.25rem 1.25rem 1.25rem;
+}
+
+.intro-label {
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intro-body strong {
+  color: var(--navy);
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.intro-body small {
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.intro-arrow {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.15rem;
+  color: var(--navy);
+  font-size: 1.6rem;
+}
+
+.document-preview {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  color: #fff;
+  background: var(--navy);
+}
+
+.document-preview span {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 116px;
+  color: var(--navy);
+  background: #fff;
+  border-top: 8px solid var(--red);
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .message-card,
@@ -525,6 +617,7 @@ h3 {
 
   .card-grid,
   .list-columns,
+  .intro-grid,
   .link-grid {
     grid-template-columns: 1fr;
   }
