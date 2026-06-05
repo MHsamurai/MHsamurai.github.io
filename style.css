@@ -398,6 +398,22 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.work-experience-card {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  color: var(--muted);
+  background: var(--surface);
+  border-left: 6px solid var(--red);
+  box-shadow: var(--shadow);
+}
+
+.work-experience-card p {
+  margin-bottom: 1rem;
+}
+
+.work-experience-card p:last-child {
+  margin-bottom: 0;
+}
+
 .news-card p:last-child {
   margin-bottom: 0;
 }
