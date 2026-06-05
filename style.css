@@ -258,6 +258,72 @@ h3 {
   font-size: 1.05rem;
 }
 
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--surface);
+  border-left: 6px solid var(--red);
+  box-shadow: var(--shadow);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  padding: 0.75rem 0.85rem;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(180, 35, 44, 0.25);
+  border-color: var(--red);
+}
+
+.contact-form button {
+  justify-self: start;
+  border: 1px solid var(--red);
+  padding: 0.65rem 1.2rem;
+  color: #fff;
+  background: var(--red);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.form-note {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .prose p:last-child {
   margin-bottom: 0;
 }
