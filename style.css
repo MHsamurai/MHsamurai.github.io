@@ -21,6 +21,9 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
   margin: 0;
   color: var(--ink);
   background: var(--paper);
@@ -29,7 +32,7 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto;
   height: 320px;
   background: var(--navy);
