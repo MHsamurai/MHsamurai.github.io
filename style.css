@@ -402,6 +402,16 @@ h3 {
   margin-bottom: 0;
 }
 
+.news-card article + article {
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.news-card h3 {
+  margin-bottom: 0.6rem;
+}
+
 .news-card a {
   font-weight: 900;
 }
