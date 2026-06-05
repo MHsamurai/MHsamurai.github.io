@@ -1,264 +1,373 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="4B0JX9y-3Lg_BZ7iARlgwKvs2Yp9B0Qu5FWL34mdNY4" />
-  <title>Shuyi Zhou – Personal Page</title>
-  <meta name="description" content="Shuyi Zhou: Personal homepage" />
+  <title>本多将大 | Masahiro Honda</title>
+  <meta name="description" content="本多将大 / Masahiro Honda の個人サイト。マーケティング・サイエンス、行動計量学、消費者行動、Shrinkflation、測定誤差、欠測、モデリング、シングルソースデータに関する研究。" />
+  <meta name="keywords" content="本多将大, Masahiro Honda, マーケティング・サイエンス, 行動計量学, 経済学, Shrinkflation, 測定誤差, 欠測, モデリング, シングルソースデータ, Structural Equation Modeling" />
+  <meta property="og:title" content="本多将大 | Masahiro Honda" />
+  <meta property="og:description" content="マーケティング・サイエンス、行動計量学、消費者行動分析に取り組む本多将大の個人サイト。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mhsamurai.github.io/MasahiroHonda.github.io/assets/profile.jpg" />
   <link rel="preload" href="style.css" as="style" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Masahiro Honda home">Masahiro Honda</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#research" data-i18n-ja="研究" data-i18n-en="Research">研究</a>
+      <a href="#publications" data-i18n-ja="業績" data-i18n-en="Publications">業績</a>
+      <a href="#career" data-i18n-ja="経歴" data-i18n-en="Career">経歴</a>
+      <a href="#links" data-i18n-ja="リンク" data-i18n-en="Links">リンク</a>
+      <a href="progress-2025.html" data-i18n-ja="2025年進捗" data-i18n-en="2025 Progress">2025年進捗</a>
+    </nav>
+    <div class="language-tabs" role="tablist" aria-label="Language">
+      <button class="language-tab is-active" type="button" data-lang-switch="ja" role="tab" aria-selected="true">JP</button>
+      <button class="language-tab" type="button" data-lang-switch="en" role="tab" aria-selected="false">EN</button>
+    </div>
+  </header>
 
-  <main class="container">
-    <!-- ===== Hero ===== -->
-    <section id="about" class="section" aria-label="About">
-      <div class="hero">
-        <div class="avatar">
-          <img src="assets/self.jpg" alt="Portrait of Shuyi Zhou" loading="lazy" />
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="portrait-wrap">
+        <img src="assets/profile.jpg" alt="本多将大 / Masahiro Honda" class="portrait" />
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n-ja="Marketing Science / Behaviormetrics / Economics" data-i18n-en="Marketing Science / Behaviormetrics / Economics">Marketing Science / Behaviormetrics / Economics</p>
+        <h1>
+          <span data-i18n-ja="本多将大" data-i18n-en="Masahiro Honda">本多将大</span>
+          <small data-i18n-ja="Masahiro Honda" data-i18n-en="本多将大">Masahiro Honda</small>
+        </h1>
+        <div class="role-stack">
+          <p data-i18n-ja="株式会社エコノミクスデザイン ビジネスデベロップメント ディレクター" data-i18n-en="Business Development Director, Economics Design Inc.">株式会社エコノミクスデザイン ビジネスデベロップメント ディレクター</p>
+          <p data-i18n-ja="慶應義塾大学大学院 経済学研究科 博士課程 / 産業研究所 共同研究員" data-i18n-en="PhD Student, Graduate School of Economics, Keio University / Collaborative Researcher, Keio Economic Observatory">慶應義塾大学大学院 経済学研究科 博士課程 / 産業研究所 共同研究員</p>
+          <p data-i18n-ja="日本学術振興会 特別研究員 DC2 / 理化学研究所 AIPセンター 研究メンバー" data-i18n-en="JSPS Research Fellow DC2 / Research Member, RIKEN AIP Center">日本学術振興会 特別研究員 DC2 / 理化学研究所 AIPセンター 研究メンバー</p>
         </div>
+        <p class="lead" data-i18n-ja="マーケティング・サイエンス、行動計量学、消費者行動分析を専門とし、実購買ログデータ、アンケートデータ、構造方程式モデリング、需要推定を用いて、企業の価格戦略と消費者の心理・行動を分析しています。" data-i18n-en="I study marketing science, behaviormetrics, and consumer behavior, using purchase log data, survey data, structural equation modeling, and demand estimation to analyze pricing strategy and consumer psychology.">マーケティング・サイエンス、行動計量学、消費者行動分析を専門とし、実購買ログデータ、アンケートデータ、構造方程式モデリング、需要推定を用いて、企業の価格戦略と消費者の心理・行動を分析しています。</p>
+        <div class="hero-actions">
+          <a href="assets/cv-masahiro-honda.pdf">CV PDF</a>
+          <a href="mailto:honda@edi.co.jp">honda@edi.co.jp</a>
+          <a href="mailto:masahirohonda@keio.jp">masahirohonda@keio.jp</a>
+          <a href="mailto:masahiro.honda@riken.jp">masahiro.honda@riken.jp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell two-column">
+      <div>
+        <p class="section-kicker" data-i18n-ja="About" data-i18n-en="About">About</p>
+        <h2 data-i18n-ja="プロフィール" data-i18n-en="Profile">プロフィール</h2>
+      </div>
+      <div class="prose">
+        <div data-lang-block="ja">
+          <p>本多将大は、慶應義塾大学大学院経済学研究科博士課程に在籍し、星野崇宏研究室に所属しています。株式会社エコノミクスデザインではビジネスデベロップメントを担当し、理化学研究所 AIPセンター 経済経営情報融合分析チームの研究メンバーとしても活動しています。</p>
+          <p>研究関心は、マーケティング・サイエンス、行動計量学、消費者行動、クラウドファンディング、Shrinkflation、構造方程式モデリングにあります。近年は、測定誤差、欠測、モデリング、シングルソースデータを扱う統合分析にも取り組んでいます。</p>
+        </div>
+        <div data-lang-block="en" hidden>
+          <p>Masahiro Honda is a PhD student in the Graduate School of Economics at Keio University and a member of Professor Takahiro Hoshino's laboratory. He is also engaged in business development at Economics Design Inc. and works as a research member of the Business and Economic Information Fusion Analysis Team at the RIKEN AIP Center.</p>
+          <p>His research interests include marketing science, behaviormetrics, consumer behavior, crowdfunding, shrinkflation, and structural equation modeling. His recent work also addresses measurement error, missing data, modeling, and integrated analysis of single-source data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="section-shell two-column message-section">
+      <div>
+        <p class="section-kicker" data-i18n-ja="Message" data-i18n-en="Message">Message</p>
+        <h2 data-i18n-ja="メッセージ" data-i18n-en="Message">メッセージ</h2>
+      </div>
+      <div class="message-card">
+        <div data-lang-block="ja">
+          <p>実務の現場で見える課題と、経済学・統計学・マーケティング・サイエンスの方法を接続し、企業や社会の意思決定に資する実証研究を進めています。特に、消費者の心理や認知バイアスが、価格、寄付、購買、調査回答といった行動にどのように表れるのかを、データとモデルの両面から明らかにしたいと考えています。</p>
+          <p>研究成果を論文や学会発表にとどめず、実務家・政策担当者・学生にも伝わる形で共有し、よりよい市場設計とマーケティング実践につなげることを目指しています。</p>
+        </div>
+        <div data-lang-block="en" hidden>
+          <p>I aim to connect practical business questions with methods from economics, statistics, and marketing science. My work studies how consumer psychology and cognitive bias appear in pricing, donation, purchase behavior, and survey responses through both data and modeling.</p>
+          <p>Beyond publishing papers and presenting at conferences, I hope to communicate research findings in ways that are useful for practitioners, policymakers, and students, and to contribute to better market design and marketing practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n-ja="Research" data-i18n-en="Research">Research</p>
+        <h2 data-i18n-ja="研究テーマ" data-i18n-en="Research Themes">研究テーマ</h2>
+      </div>
+      <div class="card-grid">
+        <article class="research-card">
+          <span class="tag">Shrinkflation</span>
+          <h3 data-i18n-ja="Shrinkflation を対象とした消費者行動分析" data-i18n-en="Consumer Behavior Analysis of Shrinkflation">Shrinkflation を対象とした消費者行動分析</h3>
+          <p data-i18n-ja="内容量を縮小しつつ価格を据え置く shrinkflation が消費者行動に与える影響を、認知バイアス、参照点、公平感、内容量の弾力性の観点から分析します。実購買ログデータとアンケートデータを組み合わせ、価格・内容量・容器サイズを統合した需要モデルと実務的な価格戦略の構築を目指しています。" data-i18n-en="This project studies how shrinkflation, reducing package quantity while keeping price unchanged, affects consumer behavior through cognitive bias, reference points, perceived fairness, and package-size elasticity. The project combines purchase log data and survey data to build demand models and practical pricing frameworks that integrate price, quantity, and package size.">内容量を縮小しつつ価格を据え置く shrinkflation が消費者行動に与える影響を、認知バイアス、参照点、公平感、内容量の弾力性の観点から分析します。実購買ログデータとアンケートデータを組み合わせ、価格・内容量・容器サイズを統合した需要モデルと実務的な価格戦略の構築を目指しています。</p>
+        </article>
+        <article class="research-card">
+          <span class="tag">Single-source Data</span>
+          <h3 data-i18n-ja="調査・行動データの統合分析モデル" data-i18n-en="Integrated Models for Survey and Behavioral Data">調査・行動データの統合分析モデル</h3>
+          <p data-i18n-ja="シングルソースデータにおいて生じる欠測と測定誤差に着目し、Multiple Overimputation による補正を通じて、調査データと行動データを統合的に分析するモデルを研究しています。" data-i18n-en="This work focuses on missing data and measurement error in single-source data and develops integrated models for survey and behavioral data using Multiple Overimputation.">シングルソースデータにおいて生じる欠測と測定誤差に着目し、Multiple Overimputation による補正を通じて、調査データと行動データを統合的に分析するモデルを研究しています。</p>
+        </article>
+        <article class="research-card">
+          <span class="tag">Crowdfunding</span>
+          <h3 data-i18n-ja="寄付・クラウドファンディングの利用動機" data-i18n-en="Motivations for Donation and Crowdfunding">寄付・クラウドファンディングの利用動機</h3>
+          <p data-i18n-ja="ふるさと納税およびクラウドファンディング型ふるさと納税の実寄付者データを用いて、内発的・外発的動機づけと寄付行動の関係を分析しています。" data-i18n-en="Using real donor data from hometown tax donation and crowdfunding-based hometown tax donation, this research examines the relationship between intrinsic and extrinsic motivations and donation behavior.">ふるさと納税およびクラウドファンディング型ふるさと納税の実寄付者データを用いて、内発的・外発的動機づけと寄付行動の関係を分析しています。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section-shell">
+      <div class="section-heading split-heading">
         <div>
-          <h1 class="title">Shuyi Zhou &nbsp;	 <ruby>周舒意<rt>ゾウ シュウイ</rt></ruby></h1>
-          <p class="subtitle muted">Ph.D. candidate @ the University of Tokyo · Member of
-            <a href="https://www.cvl.iis.u-tokyo.ac.jp/" target="_blank" rel="noreferrer">Oishi Lab</a>
-            · Research interests: 3D vision, LiDAR–camera fusion</p>
-          <div class="links">
-            <span class="chip">zhoushuyi495@gmail.com</span>
-            <a class="chip" href="https://github.com/ShuyiZhou495" target="_blank" rel="noreferrer">GitHub</a>
-            <!-- <a class="chip" href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a> -->
-            <a class="chip" href="assets/CV_1page.pdf" target="_blank" rel="noreferrer">CV</a>
-          </div>
+          <p class="section-kicker" data-i18n-ja="Publications" data-i18n-en="Publications">Publications</p>
+          <h2 data-i18n-ja="主要業績" data-i18n-en="Selected Publications">主要業績</h2>
         </div>
+        <p class="heading-note" data-i18n-ja="査読論文・ディスカッションペーパー・研究中の論文を含みます。" data-i18n-en="Includes peer-reviewed articles, discussion papers, and work in progress.">査読論文・ディスカッションペーパー・研究中の論文を含みます。</p>
       </div>
-      <p>
-        I am a Ph.D. candidate at the The University of Tokyo, advised by Prof. Takeshi Oishi.
-        I received my Master's degree from The University of Tokyo in 2023 and my Bachelor of Science degree (Electrical and Computer Engineering) from Shanghai Jiao Tong University (UM-SJTU Joint Institute) in 2021.
-      </p>
-      <p>
-        My research focuses on 3D vision, particularly sensor fusion and differentiable rendering techniques such as Gaussian Splatting and Neural Radiance Fields (NeRF).
-        I excel at developing innovative algorithms that enhance 3D reconstruction and scene understanding from multi-modal data sources.
-      </p>
-      <p>
-        <strong>I am looking for full-time job opportunities from April 2027.</strong>
-      </p>
+      <ol class="publication-list" data-lang-block="ja">
+        <li>
+          <p><strong>本多将大、星野崇宏</strong> (2024). ふるさと納税およびクラウドファンディング型ふるさと納税の利用動機. <em>行動計量学</em>, 51(2), 137-151.</p>
+          <a href="https://doi.org/10.2333/jbhmk.51.137" target="_blank" rel="noreferrer">DOI</a>
+          <a href="https://www.jstage.jst.go.jp/article/jbhmk/51/2/51_137/_article/-char/ja/" target="_blank" rel="noreferrer">J-STAGE</a>
+        </li>
+        <li>
+          <p><strong>本多将大</strong> (2025). 小売市場におけるシュリンクフレーションのシステマティックレビュー. 慶應義塾大学経済研究所ディスカッションペーパー.</p>
+        </li>
+        <li>
+          <p><strong>本多将大</strong> (2025). シングルソースデータにおける調査・行動データの統合分析モデル─ Multiple Overimputation による欠測・測定誤差の補正─. <em>マーケティング・サイエンス</em>, 33(1), 99-120.</p>
+          <a href="https://www.jstage.jst.go.jp/article/marketingscience/33/1/33_202508/_pdf" target="_blank" rel="noreferrer">PDF</a>
+        </li>
+      </ol>
+      <ol class="publication-list" data-lang-block="en" hidden>
+        <li>
+          <p><strong>Masahiro Honda, Takahiro Hoshino</strong> (2024). Motivations for Hometown Tax Donation and Crowdfunding-Based Hometown Tax Donation. <em>The Japanese Journal of Behaviormetrics</em>, 51(2), 137-151.</p>
+          <a href="https://doi.org/10.2333/jbhmk.51.137" target="_blank" rel="noreferrer">DOI</a>
+          <a href="https://www.jstage.jst.go.jp/article/jbhmk/51/2/51_137/_article/-char/ja/" target="_blank" rel="noreferrer">J-STAGE</a>
+        </li>
+        <li>
+          <p><strong>Masahiro Honda</strong> (2025). A Systematic Review of Shrinkflation in Retail Markets. Keio Economic Observatory Discussion Paper.</p>
+        </li>
+        <li>
+          <p><strong>Masahiro Honda</strong> (2025). Integrated Analysis Model for Survey and Behavioral Data in Single-Source Data: Correcting Missingness and Measurement Error with Multiple Overimputation. <em>Marketing Science</em>, 33(1), 99-120.</p>
+          <a href="https://www.jstage.jst.go.jp/article/marketingscience/33/1/33_202508/_pdf" target="_blank" rel="noreferrer">PDF</a>
+        </li>
+      </ol>
+
+      <h3 class="subheading" data-i18n-ja="研究中" data-i18n-en="Work in Progress">研究中</h3>
+      <ul class="compact-list" data-lang-block="ja">
+        <li>Package Size Elasticity Estimation under Shrinkflation（共著者：Ryuki Kobayashi, Kiyotaka Yageta, Takahiro Hoshino）</li>
+        <li>Bayesian SEM for Small Samples with Weakly Informative Priors（共著者：Kaito Iguchi, Takahiro Hoshino）</li>
+        <li>The Causal Effect of Consumers' Perceived Unfairness Toward Shrinkflation on Real Purchases（共著者：Kaito Iguchi, Takahiro Hoshino）</li>
+      </ul>
+      <ul class="compact-list" data-lang-block="en" hidden>
+        <li>Package Size Elasticity Estimation under Shrinkflation, with Ryuki Kobayashi, Kiyotaka Yageta, and Takahiro Hoshino.</li>
+        <li>Bayesian SEM for Small Samples with Weakly Informative Priors, with Kaito Iguchi and Takahiro Hoshino.</li>
+        <li>The Causal Effect of Consumers' Perceived Unfairness Toward Shrinkflation on Real Purchases, with Kaito Iguchi and Takahiro Hoshino.</li>
+      </ul>
     </section>
 
-    <!-- ===== Publications ===== -->
-    <section id="publications" class="section" aria-label="Publications">
-      <h2>Publications</h2>
-      <div class="pub-list">
-        <article class="pub-card">
-          <div class="media yt" data-youtube-id="ahnoNwaP2xQ">
-            <img class="yt-thumb"
-                src="https://i.ytimg.com/vi/ahnoNwaP2xQ/hqdefault.jpg"
-                alt="Video teaser" loading="lazy" />
-            <div class="yt-slot" aria-hidden="true"></div>
-            </div>
-          <div>
-            <h3 class="paper-title">DeMapGS: Simultaneous Mesh Deformation and Surface Attribute Mapping via Gaussian Splatting</h3>
-            <div class="pub-meta">
-              <span class="venue">SIGGRAPH Asia 2025</span>
-              <span class="muted">|</span>
-              <span class="muted"><strong>Shuyi Zhou</strong>, Shengze Zhong, Kenshi Takayama, Takafumi Taketomi, Takeshi Oishi</span>
-            </div>
-            <p class="muted">A structured Gaussian splatting framework enabling mesh deformation and editable attribute mapping.</p>
-            <div class="pub-links">
-              <a href="https://dl.acm.org/doi/10.1145/3757377.3763860" target="_blank">Paper</a>
-              <a href="https://shuyizhou495.github.io/DeMapGS-project-page/" target="_blank">Project</a>
-              <a href="https://www.youtube.com/watch?v=kec0RfZ_FCw&embeds_referring_euri=https%3A%2F%2Fshuyizhou495.github.io%2F&source_ve_path=Mjg2NjY" target="_blank">Video</a>
-            </div>
-          </div>
+    <section id="achievements" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n-ja="Awards and Grants" data-i18n-en="Awards and Grants">Awards and Grants</p>
+        <h2 data-i18n-ja="受賞・採択" data-i18n-en="Awards and Grants">受賞・採択</h2>
+      </div>
+      <div class="card-grid">
+        <article class="research-card">
+          <span class="tag">JST</span>
+          <h3 data-i18n-ja="JST 次世代研究者挑戦的研究プログラム 採択" data-i18n-en="Selected for the JST Support for Pioneering Research Initiated by the Next Generation">JST 次世代研究者挑戦的研究プログラム 採択</h3>
+          <p data-i18n-ja="JST 次世代研究者挑戦的研究プログラム JPMJSP2123 に採択されました。" data-i18n-en="Selected for the JST Support for Pioneering Research Initiated by the Next Generation, JPMJSP2123.">JST 次世代研究者挑戦的研究プログラム JPMJSP2123 に採択されました。</p>
         </article>
-
-        <article class="pub-card">
-        <div class="media yt" data-youtube-id="ZYliXSccg0w">
-            <img class="yt-thumb"
-                src="https://i.ytimg.com/vi/ZYliXSccg0w/hqdefault.jpg"
-                alt="Video teaser" loading="lazy" />
-            <div class="yt-slot" aria-hidden="true"></div>
-        </div>
-          <div>
-            <h3 class="paper-title">Robust LiDAR-Camera Calibration with 2D Gaussian Splatting</h3>
-            <div class="pub-meta">
-              <span class="venue">Ra-L 2025</span>
-              <!-- <span class="venue">IROS 2025</span> -->
-              <span class="muted">|</span>
-              <span class="muted"><strong>Shuyi Zhou</strong>, Shuxiang Xie, Ryoichi Ishikawa, Takeshi Oishi
-            </div>
-            <p class="muted">A targetless LiDAR-camera calibration method that consolidates various geometric constraints based on 2DGS.</p>
-            <div class="pub-links">
-              <a href="https://ieeexplore.ieee.org/abstract/document/10933576" target="_blank">Paper</a>
-              <a href="https://shuyizhou495.github.io/RobustCalibration-page/" target="_blank">Project</a>
-              <a href="https://www.youtube.com/watch?v=ZYliXSccg0w" target="_blank">Video</a>
-            </div>
-          </div>
+        <article class="research-card">
+          <span class="tag">JSPS</span>
+          <h3 data-i18n-ja="日本学術振興会 特別研究員 DC2 採択" data-i18n-en="Selected as a JSPS Research Fellow DC2">日本学術振興会 特別研究員 DC2 採択</h3>
+          <p data-i18n-ja="2026年4月より日本学術振興会 特別研究員 DC2 として研究を進めます。" data-i18n-en="Starting in April 2026, he conducts research as a JSPS Research Fellow DC2.">2026年4月より日本学術振興会 特別研究員 DC2 として研究を進めます。</p>
         </article>
-
-        <article class="pub-card">
-            
-        <div class="media yt" data-youtube-id="OoVaK1b2SOs">
-            <img class="yt-thumb"
-                src="https://i.ytimg.com/vi/OoVaK1b2SOs/hqdefault.jpg"
-                alt="Video teaser" loading="lazy" />
-            <div class="yt-slot" aria-hidden="true"></div>
-        </div>
-          <div>
-            <h3 class="paper-title">G<sup>2</sup>fR: Frequency Regularization in Grid-based Feature Encoding Neural Radiance Fields</h3>
-            <div class="pub-meta">
-              <span class="venue">ECCV 2024</span>
-              <span class="muted">|</span>
-              <span class="muted">Shuxiang Xie, <strong>Shuyi Zhou</strong>, Ken Sakurada, Ryoichi Ishikawa, Masaki Onishi, and Takeshi Oishi</span>
-            </div>
-            <p class="muted">Generalized frequency regularization method for grid-based implicit representations (e.g., Instant-NGP), analyzing their mathematical principles and frequency behavior.</p>
-            <div class="pub-links">
-              <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03259.pdf" target="_blank">Paper</a>
-              <a href="https://www.youtube.com/watch?v=atR3cK_Y86I" target="_blank">Video</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="pub-card">
-          <div class="media contain">
-            <img src="assets/color.png" alt="Teaser" loading="lazy" />
-          </div>
-          <div>
-            <h3 class="paper-title">LiDAR-Camera Calibration using Intensity Variance Cost</h3>
-            <div class="pub-meta">
-              <span class="venue">ICRA 2024</span>
-              <span class="muted">|</span>
-              <span class="muted">Ryoichi Ishikawa, <strong>Shuyi Zhou</strong>, Yoshihiro Sato, Takeshi Oishi, Katsushi Ikeuchi</span>
-            </div>
-            <p class="muted">A targetless LiDAR-camera calibration applicable even to 1D LiDAR using the cost function based on intensity variance.</p>
-            <div class="pub-links">
-              <a href="https://www.cvl.iis.u-tokyo.ac.jp/data/uploads/papers/Ishikawa_LiDAR_Camera_Calibration_ICRA2024.pdf" target="_blank">Paper</a>
-            </div>
-          </div>
-        </article>
-
-    <article class="pub-card">
-         <div class="media yt" data-youtube-id="F1t454auZDI">
-            <img class="yt-thumb"
-                src="https://i.ytimg.com/vi/F1t454auZDI/hqdefault.jpg"
-                alt="Video teaser" loading="lazy" />
-            <div class="yt-slot" aria-hidden="true"></div>
-        </div>
-          <div>
-            <h3 class="paper-title">INF: Implicit Neural Fusion for LiDAR and Camera</h3>
-            <div class="pub-meta">
-              <span class="venue">IROS 2023</span>
-              <span class="muted">|</span>
-              <span class="muted"><strong>Shuyi Zhou</strong>, Shuxiang Xie, Ryoichi Ishikawa, Ken Sakurada, Masaki Onishi, Takeshi Oishi</span>
-            </div>
-            <p class="muted">Implicit neural representations with diverse sensor inputs to achieve robust sensor fusion and calibration.</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2308.14414" target="_blank">Paper</a>
-              <a href="https://shuyizhou495.github.io/inf-project-page/" target="_blank">Project</a>
-              <a href="https://www.youtube.com/watch?v=I1MJ_tUdNB4" target="_blank">Video</a>
-            </div>
-          </div>
+        <article class="research-card">
+          <span class="tag" data-i18n-ja="受賞" data-i18n-en="Award">受賞</span>
+          <h3 data-i18n-ja="慶應義塾大学 経済学部関連ニュース" data-i18n-en="Keio University Faculty of Economics News">慶應義塾大学 経済学部関連ニュース</h3>
+          <p data-i18n-ja="受賞・研究活動に関する慶應義塾大学のニュースページです。" data-i18n-en="Keio University news page covering awards and research activities.">受賞・研究活動に関する慶應義塾大学のニュースページです。</p>
+          <p><a href="https://www.keio.ac.jp/ja/econ/news/14823/" target="_blank" rel="noreferrer">Keio News</a></p>
         </article>
       </div>
     </section>
 
-    <!-- ===== Experience (Timeline) ===== -->
-    <section id="experience" class="section" aria-label="Experience">
-      <h2>Experience</h2>
+    <section id="presentations" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n-ja="Presentations" data-i18n-en="Presentations">Presentations</p>
+        <h2 data-i18n-ja="学会発表" data-i18n-en="Conference Presentations">学会発表</h2>
+      </div>
+      <div class="list-columns">
+        <article data-lang-block="ja">
+          <h3 data-i18n-ja="国際学会" data-i18n-en="International">国際学会</h3>
+          <ul class="compact-list">
+            <li>Masahiro Honda, Takahiro Hoshino. "Understanding the Motivations of Donors: Intrinsic and Extrinsic Factors in Reward-Based and Hybrid Crowdfunding in Japan." IAFOR The 15th Asian Conference on Psychology & the Behavioral Sciences, Tokyo, Japan, 2025.</li>
+            <li>Kazuki Nishio, Masahiro Honda, Takahiro Hoshino. "Thresholds or Constant Rewards? Examining Customer Responses to Loyalty Program Design Changes." ISMS Marketing Science Conference, Washington D.C., USA, 2025.</li>
+          </ul>
+        </article>
+        <article data-lang-block="ja">
+          <h3 data-i18n-ja="国内学会" data-i18n-en="Domestic">国内学会</h3>
+          <ul class="compact-list">
+            <li>本多将大、星野崇宏. 「ふるさと納税およびクラウドファンディング型ふるさと納税の利用動機」日本行動計量学会第52回大会, 2024.</li>
+            <li>本多将大. 「小売業界におけるステルス値下げ(Shrinkflation)戦略の国際文献レビュー」商業学会第14回全国研究報告会, 2024.</li>
+            <li>白石遼太郎、本多将大. 「プライベートブランドの価格戦略が市場構造に与える影響」日本マーケティング・サイエンス学会第116回大会, 2024.</li>
+            <li>本多将大、高柳剛弘、星野崇宏. 「アンケート調査の効率化のための大規模言語モデル活用に関する検証」人工知能学会全国大会（第39回）, 2025.</li>
+            <li>本多将大. 「アンケート調査と購買ログデータの統合分析モデルとデータ融合，及びPB購買行動分析への応用」日本マーケティング・サイエンス学会第117回研究大会, 2025.</li>
+          </ul>
+        </article>
+        <article data-lang-block="en" hidden>
+          <h3>International</h3>
+          <ul class="compact-list">
+            <li>Masahiro Honda, Takahiro Hoshino. "Understanding the Motivations of Donors: Intrinsic and Extrinsic Factors in Reward-Based and Hybrid Crowdfunding in Japan." IAFOR The 15th Asian Conference on Psychology & the Behavioral Sciences, Tokyo, Japan, 2025.</li>
+            <li>Kazuki Nishio, Masahiro Honda, Takahiro Hoshino. "Thresholds or Constant Rewards? Examining Customer Responses to Loyalty Program Design Changes." ISMS Marketing Science Conference, Washington D.C., USA, 2025.</li>
+          </ul>
+        </article>
+        <article data-lang-block="en" hidden>
+          <h3>Domestic</h3>
+          <ul class="compact-list">
+            <li>Masahiro Honda, Takahiro Hoshino. "Motivations for Hometown Tax Donation and Crowdfunding-Based Hometown Tax Donation." The 52nd Annual Meeting of the Behaviormetric Society, Osaka, Japan, 2024.</li>
+            <li>Masahiro Honda. "An International Literature Review of Shrinkflation Strategies in Retail Markets." The 14th National Research Meeting of the Japan Society of Commerce, Aichi, Japan, 2024.</li>
+            <li>Ryotaro Shiraishi, Masahiro Honda. "The Impact of Private Brand Pricing Strategy on Market Structure." The 116th Conference of the Japan Institute of Marketing Science, Tokyo, Japan, 2024.</li>
+            <li>Masahiro Honda, Takehiro Takayanagi, Takahiro Hoshino. "An Evaluation of Large Language Models for Improving Survey Research Efficiency." The 39th Annual Conference of the Japanese Society for Artificial Intelligence, Osaka, Japan, 2025.</li>
+            <li>Masahiro Honda. "Integrated Modeling and Data Fusion of Survey and Purchase Log Data, with an Application to Private Brand Purchase Behavior." The 117th Conference of the Japan Institute of Marketing Science, Nagano, Japan, 2025.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="career" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n-ja="Career" data-i18n-en="Career">Career</p>
+        <h2 data-i18n-ja="経歴" data-i18n-en="Education and Experience">経歴</h2>
+      </div>
       <div class="timeline">
-        <div class="t-item">
-          <div class="t-title">Research Engineer Intern, T2 Inc.</div>
-          <div class="t-meta">2025.08 – 2025.09 · Tokyo, Japan</div>
-          <p class="muted">Sensor fusion, Autonomous driving.</p>
+        <div class="timeline-item"><time>2026.04 - 2028.03</time><p data-i18n-ja="日本学術振興会 特別研究員 DC2" data-i18n-en="JSPS Research Fellow DC2">日本学術振興会 特別研究員 DC2</p></div>
+        <div class="timeline-item"><time>2026.03 - Present</time><p data-i18n-ja="株式会社エコノミクスデザイン ビジネスデベロップメント ディレクター" data-i18n-en="Business Development Director, Economics Design Inc.">株式会社エコノミクスデザイン ビジネスデベロップメント ディレクター</p></div>
+        <div class="timeline-item"><time>2025.04 - Present</time><p data-i18n-ja="慶應義塾大学大学院 経済学研究科 博士課程 / 産業研究所 共同研究員 / 経済学部奨励研究員" data-i18n-en="PhD Student, Graduate School of Economics, Keio University / Collaborative Researcher, Keio Economic Observatory / Research Fellow, Faculty of Economics">慶應義塾大学大学院 経済学研究科 博士課程 / 産業研究所 共同研究員 / 経済学部奨励研究員</p></div>
+        <div class="timeline-item"><time>2024.10 - Present</time><p data-i18n-ja="慶應義塾大学 TA（計量経済学概論・産業組織）" data-i18n-en="Teaching Assistant, Keio University (Introductory Econometrics / Industrial Organization)">慶應義塾大学 TA（計量経済学概論・産業組織）</p></div>
+        <div class="timeline-item"><time>2024.04 - Present</time><p data-i18n-ja="理化学研究所 経済経営情報融合分析チーム" data-i18n-en="Business and Economic Information Fusion Analysis Team, RIKEN">理化学研究所 経済経営情報融合分析チーム</p></div>
+        <div class="timeline-item"><time>2024.10 - 2026.03</time><p data-i18n-ja="株式会社エコノミクスデザイン ビジネスデベロップメント アソシエイト" data-i18n-en="Business Development Associate, Economics Design Inc.">株式会社エコノミクスデザイン ビジネスデベロップメント アソシエイト</p></div>
+        <div class="timeline-item"><time>2023.04 - 2025.03</time><p data-i18n-ja="慶應義塾大学大学院 経済学研究科 修士課程修了" data-i18n-en="M.A. in Economics, Graduate School of Economics, Keio University">慶應義塾大学大学院 経済学研究科 修士課程修了</p></div>
+        <div class="timeline-item"><time>2021.04 - 2022.05</time><p data-i18n-ja="Indeed Japan株式会社 Account Executive" data-i18n-en="Account Executive, Indeed Japan K.K.">Indeed Japan株式会社 Account Executive</p></div>
+        <div class="timeline-item"><time>2019.09 - 2020.08</time><p data-i18n-ja="RWTH Aachen University, Germany 交換留学" data-i18n-en="Exchange Student, RWTH Aachen University, Germany">RWTH Aachen University, Germany 交換留学</p></div>
+        <div class="timeline-item"><time>2021.03</time><p data-i18n-ja="慶應義塾大学 経済学部 卒業" data-i18n-en="B.A. in Economics, Keio University">慶應義塾大学 経済学部 卒業</p></div>
+      </div>
+    </section>
+
+    <section id="links" class="section-shell">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n-ja="Links" data-i18n-en="Links">Links</p>
+        <h2 data-i18n-ja="インタビュー・研究費・所属" data-i18n-en="Interviews, Grants, and Affiliations">インタビュー・研究費・所属</h2>
+      </div>
+      <div class="link-grid">
+        <a href="https://doctoral-support.keio.ac.jp/spring/selected-interview/858/" target="_blank" rel="noreferrer">
+          <span data-i18n-ja="インタビュー" data-i18n-en="Interview">インタビュー</span>
+          <strong>Keio SPRING Selected Interview</strong>
+        </a>
+        <a href="https://www.keio.ac.jp/ja/gsecon/major/economics/testimonials/interview3/" target="_blank" rel="noreferrer">
+          <span data-i18n-ja="インタビュー" data-i18n-en="Interview">インタビュー</span>
+          <strong data-i18n-ja="慶應義塾大学大学院 経済学研究科" data-i18n-en="Keio Graduate School of Economics">慶應義塾大学大学院 経済学研究科</strong>
+        </a>
+        <a href="https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-26KJ1940/" target="_blank" rel="noreferrer">
+          <span>KAKEN</span>
+          <strong data-i18n-ja="Shrinkflation を対象とした消費者行動分析" data-i18n-en="Consumer Behavior Analysis of Shrinkflation">Shrinkflation を対象とした消費者行動分析</strong>
+        </a>
+        <a href="https://www.riken.jp/research/labs/aip/math/bus_econ_inf_fusion_anl/index.html" target="_blank" rel="noreferrer">
+          <span>RIKEN AIP</span>
+          <strong data-i18n-ja="経済経営情報融合分析チーム" data-i18n-en="Business and Economic Information Fusion Analysis Team">経済経営情報融合分析チーム</strong>
+        </a>
+        <a href="https://econ.news/" target="_blank" rel="noreferrer">
+          <span>Economics Design</span>
+          <strong data-i18n-ja="株式会社エコノミクスデザイン" data-i18n-en="Economics Design Inc.">株式会社エコノミクスデザイン</strong>
+        </a>
+        <a href="https://jp.linkedin.com/in/masahiro-honda-5bb235172" target="_blank" rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>Masahiro Honda</strong>
+        </a>
+        <a href="https://note.com/booksbooks" target="_blank" rel="noreferrer">
+          <span data-i18n-ja="ブログ（旧）" data-i18n-en="Blog (archive)">ブログ（旧）</span>
+          <strong>note.com/booksbooks</strong>
+        </a>
+        <a href="progress-2025.html">
+          <span data-i18n-ja="進捗" data-i18n-en="Progress">進捗</span>
+          <strong data-i18n-ja="2025年の研究進捗" data-i18n-en="Research Progress in 2025">2025年の研究進捗</strong>
+        </a>
+      </div>
+    </section>
+
+    <section id="materials" class="section-shell two-column">
+      <div>
+        <p class="section-kicker" data-i18n-ja="Materials" data-i18n-en="Materials">Materials</p>
+        <h2 data-i18n-ja="資料" data-i18n-en="Materials">資料</h2>
+      </div>
+      <div class="material-stack">
+        <div class="material-card">
+          <span class="tag">PPTX</span>
+          <h3 data-i18n-ja="博士課程での研究紹介スライド" data-i18n-en="Research Introduction Slides for the PhD Program">博士課程での研究紹介スライド</h3>
+          <p data-i18n-ja="来歴、専門領域、手法、2025年の研究発表をまとめた研究紹介スライドです。" data-i18n-en="Slides summarizing background, research areas, methods, and 2025 research presentations.">来歴、専門領域、手法、2025年の研究発表をまとめた研究紹介スライドです。</p>
+          <a href="assets/research-introduction.pptx">Download PPTX</a>
         </div>
-        <div class="t-item">
-          <div class="t-title">Research Intern, CyberAgent AI Lab</div>
-          <div class="t-meta">2024.08 – 2025.07 · Tokyo, Japan</div>
-          <p class="muted">Gaussian Splatting, Mesh Reconstruction, Digital human.</p>
-        </div>
-        <div class="t-item">
-          <div class="t-title">Research Assistant, The National Institute of Advanced Industrial Science and Technology (AIST)</div>
-          <div class="t-meta">2022.06 – 2023.08 · Tokyo, Japan</div>
-          <p class="muted">Sensor fusion, NeRF.</p>
+        <div class="material-card">
+          <span class="tag">PDF</span>
+          <h3 data-i18n-ja="CV" data-i18n-en="CV">CV</h3>
+          <p data-i18n-ja="これまでの経歴・研究業績・発表・採択情報をまとめたPDFです。" data-i18n-en="A PDF summary of education, experience, publications, presentations, and grants.">これまでの経歴・研究業績・発表・採択情報をまとめたPDFです。</p>
+          <a href="assets/cv-masahiro-honda.pdf">Download CV</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== Awards ===== -->
-    <section id="awards" class="section" aria-label="Awards">
-      <h2>Awards</h2>
-      <div class="awards">
-        <div class="award">
-          <div class="year">2025</div>
-          <div>MIRU Student Encouraging Award</div>
-        </div>
-        <div class="award">
-          <div class="year">2024</div>
-          <div>MIRU Excellence Award</div>
-        </div>
-        <div class="award">
-          <div class="year">2023</div>
-          <div>MIRU Student Encouraging Award</div>
-        </div>
+    <section id="societies" class="section-shell closing-grid">
+      <div>
+        <p class="section-kicker" data-i18n-ja="Academic Societies" data-i18n-en="Academic Societies">Academic Societies</p>
+        <h2 data-i18n-ja="所属学会" data-i18n-en="Memberships">所属学会</h2>
       </div>
+      <ul class="society-list">
+        <li>JIMS</li>
+        <li data-i18n-ja="日本行動計量学会" data-i18n-en="The Behaviormetric Society">日本行動計量学会</li>
+        <li data-i18n-ja="商業学会" data-i18n-en="Japan Society of Marketing and Distribution">商業学会</li>
+        <li data-i18n-ja="人工知能学会" data-i18n-en="The Japanese Society for Artificial Intelligence">人工知能学会</li>
+      </ul>
     </section>
-
-    <footer class="section">
-      <p class="muted">© <span id="year"></span> Shuyi Zhou. Last updated on <time id="updated">Dec 2025</time>.</p>
-    </footer>
   </main>
 
+  <footer class="footer">
+    <p>© <span id="year"></span> Masahiro Honda</p>
+  </footer>
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script>
-  window.__ytReadyCbs = [];
-  window.onYouTubeIframeAPIReady = function(){
-    (window.__ytReadyCbs||[]).forEach(fn=>{ try{fn();}catch(e){} });
-    window.__ytReadyCbs = [];
-  };
-</script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-  const blocks  = document.querySelectorAll('.media[data-youtube-id]');
-  const players = new Map();
-
-  function whenYTReady(cb){
-    if (window.YT && YT.Player) cb();
-    else (window.__ytReadyCbs = window.__ytReadyCbs || []).push(cb);
-  }
-
-  function createAndAutoplay(block){
-    if (players.has(block)) return;
-    const vid  = block.dataset.youtubeId;
-    const slot = block.querySelector('.yt-slot');
-
-    const p = new YT.Player(slot, {
-      videoId: vid,
-      playerVars: {
-        autoplay: 1,   
-        mute: 1,         
-        playsinline: 1,  
-        controls: 0,
-        rel: 0,
-        modestbranding: 1,
-        loop: 1,        
-        playlist: vid
+    const tabs = document.querySelectorAll('[data-lang-switch]');
+    const translated = document.querySelectorAll('[data-i18n-ja]');
+    const blocks = document.querySelectorAll('[data-lang-block]');
+    const storage = {
+      get() {
+        try { return localStorage.getItem('site-language'); } catch (_) { return null; }
+      },
+      set(language) {
+        try { localStorage.setItem('site-language', language); } catch (_) {}
       }
+    };
+    const storedLanguage = storage.get();
+    const initialLanguage = storedLanguage === 'en' ? 'en' : 'ja';
+
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      translated.forEach((node) => {
+        const text = node.dataset[`i18n${language.charAt(0).toUpperCase()}${language.slice(1)}`];
+        if (text) node.textContent = text;
+      });
+      blocks.forEach((block) => {
+        block.hidden = block.dataset.langBlock !== language;
+      });
+      tabs.forEach((tab) => {
+        const isActive = tab.dataset.langSwitch === language;
+        tab.classList.toggle('is-active', isActive);
+        tab.setAttribute('aria-selected', String(isActive));
+      });
+      storage.set(language);
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => setLanguage(tab.dataset.langSwitch));
     });
 
-    p.addEventListener('onReady', () => {
-      try { p.mute(); p.playVideo(); } catch(_) {}
-      block.classList.add('is-playing'); 
-    });
-
-    players.set(block, p);
-  }
-
-  whenYTReady(() => { blocks.forEach(createAndAutoplay); });
-</script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    setLanguage(initialLanguage);
+  </script>
 </body>
 </html>
-
-
